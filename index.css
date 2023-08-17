@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #D8EACB;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #EEEEEE;
+    padding: .5em;
+}
+
+.logo {
+    color: black;
+    font-weight: bold;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+nav ul {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #72A84A;
+    height: 100vh;
+    padding-top: 5em;
+    z-index: 100;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1em;
+    display: block;
+}
+
+.exit a {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.open-nav {
+    visibility: unset;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.forest-hero {
+    background: url('images/forest.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.wrapper {
+    padding: .5em;
+    text-align: center;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.subtitle {
+    padding: 3em 0 .5em;
+}
+
+h1 span {
+    display: block;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); 
+}
+
+.cta {
+    display: inline-block;
+    padding: 1em;
+    background: #72A84A;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 3em;
+    margin-top: 1em;
+}
+
+ul.featured-cabins {
+    width: 60%;
+    margin: 0 auto;
+}
+
+ul.featured-cabins li {
+    margin-bottom: 3em;
+}
+
+.cabin-img {
+    box-shadow: 10px 10px 10px rgba(0,0,0,.2);
+}
+
+.cabin-title {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.cabin-desc, ul.features li p, .left p {
+    line-height: 1.9em;
+    font-size: .8em;
+    margin-bottom: 2em;
+}
+
+.cabin-cta {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cabin-cta:after {
+    position: absolute;
+    content: '';
+    bottom: -12px;
+    background: white;
+    width: 100%;
+    height: 1px;
+}
+
+.cabin-cta span {
+    color: white;
+    font-weight: bold;
+}
+
+.cabin-cta img {
+    width: 10px;
+}
+
+
+.feature-container {
+    background: #1A1A1A;
+    color: white;
+}
+
+ul.features {
+    margin: 3em auto;
+    width: 70%;
+}
+
+ul.features li img {
+    width: 40px;
+}
+
+ul.features li p {
+    color: #CCCCCC;
+}
+
+.main-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    font-style: italic;
+    margin-bottom: .5em;
+}
+
+cite {
+    margin-bottom: 3em;
+    display: block;
+}
+
+ul.testimonials {
+    margin: 3em 0;
+}
+
+ul.testimonials li {
+    margin-bottom: 3em;
+}
+
+.test-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+p.test-desc {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+p.test-auth {
+    font-weight: bold;
+    font-size: .85em;
+}
+
+.last-container {
+    position: relative;
+}
+
+.fern {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 80%;
+    opacity: .1;
+}
+
+@media (min-width: 550px) {
+    
+    .menu, .exit {
+        display: none;
+    }
+    
+    header {
+        padding: 1em;
+    }
+    
+    ul.nav {
+        visibility: unset;
+        opacity: 1;
+        background: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        position: unset;
+        height: auto;
+    }
+    
+    ul.nav li a {
+        font-size: .9em;
+        padding: 0 1em;
+        font-weight: normal;
+    }
+    
+    ul.nav li:last-child a {
+        padding-right: 0;
+    }
+    
+    ul.nav .active a {
+        font-weight: bold;
+    }
+    
+    ul.nav .res a {
+        color: #72A84A;
+        font-weight: bold;
+    }
+    
+    ul.featured-cabins {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-gap: 3em;
+    }
+    
+}
+
+@media(min-width: 650px) {
+    
+    ul.features {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-gap: 3em;
+    }
+}
+
+
+@media(min-width: 900px) {
+    
+    .wrapper {
+        text-align: left;
+    }
+    
+    .flex {
+        display: flex;
+    }
+    
+    .hero {
+        padding: 8em 4em;
+    }
+    
+    .last-container {
+        padding: 0 4em;
+    }
+    
+    .main-copy {
+        width: 40%;
+    }
+    
+    p.subtitle {
+        margin: 0 0 1em;
+        padding: 0;
+    }
+    
+    h1 {
+        font-size: 3em;
+        margin-top: 0;
+    }
+    
+    ul.featured-cabins {
+        width: 70%;
+    }
+    
+    .main-quote, .main-cite {
+        text-align: center;
+    }
+    
+    .main-quote {
+        font-size: 3em;
+        margin-top: 2em;
+    }
+    
+    .main-cite {
+        font-size: 1.5em;
+        margin-bottom: 3em;
+    }
+    
+    
+    .bio {
+        width: 90%;
+    }
+    
+    ul.testimonials {
+        margin-left: 2em;
+        width: 100%;
+    }
+    
+    ul.testimonials li {
+        display: flex;
+        background: white;
+        padding: 1.5em;
+        margin-bottom: 1em;
+    }
+    
+    .test-img {
+        margin-right: 1em;
+    }
+    
+    .test-desc {
+        margin-top: .5em;
+        font-size: 1.1em;
+        margin-bottom: 0;
+    }
+    
+    .fern {
+        width: 20%;
+    }
+    
+    .cabin-desc, ul.features li p, .left p {
+        font-size: .9em;
+    }
+    
+    
+}
