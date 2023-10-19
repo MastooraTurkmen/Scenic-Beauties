@@ -1,8 +1,10 @@
 # Scenic Beauties Await You
+Living in a forested environment can provide a peaceful and serene lifestyle, with opportunities for outdoor activities, wildlife observation, and a strong connection to the natural world.
 
-Asalamualikum there,
+## Asalamualikum there,
 
-I hope you're doing well as usual. This is one of my UI Design projects that I would like to share with you. In this project, you will amazing forest house picture. Thank you so much :) Happy Coding!
+I hope you're doing well as usual. This is one of my UI Design projects that I would like to share with you. In this project, you see amazing forest house pictures. On this site, I used different types of houses where you can live in the forest. Thank you so much :) Happy Coding!
+
 
 # Mobile Version
 
@@ -18,6 +20,7 @@ I hope you're doing well as usual. This is one of my UI Design projects that I w
 
 ![Alt text](Mobile-5.png)
 
+
 # Tablet version
 
 ![Alt text](Tablet-1.png)
@@ -27,6 +30,7 @@ I hope you're doing well as usual. This is one of my UI Design projects that I w
 ### Our Cabins-Tablet
 
 ![Alt text](Tablet-3.png)
+
 
 # Desktop version
 
